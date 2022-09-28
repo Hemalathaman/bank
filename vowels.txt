@@ -1,0 +1,55 @@
+package day2b;
+import java.util.Scanner;
+ 
+
+public class StringManipulations 
+
+{
+	    String anyWord;
+	    int count=0;
+		public void setWord(String newWord)	
+		{
+			anyWord=newWord;
+		}
+		public  int countvowels()
+		{
+			char[] s=anyWord.toCharArray();
+			for(int i=0;i<s.length;i++)
+			{
+				System.out.println(s[i]);
+				
+				if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+				{
+					 count++;
+					 
+				}
+			}
+//			System.out.println("Number of Vowels:"+count);
+			return count;
+		}
+
+		public char[] getAllVowels()
+		{
+			char[] s=anyWord.toCharArray();
+			
+						
+			for(int i=0;i<s.length;i++)
+			{
+				//System.out.println(s[i]);
+				
+				
+				if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+				{ 
+					 int count=0;
+					 String arr[count]=s[i];
+					 count++;
+					 System.out.println(arr[i]);
+                 }
+			
+               // return count;	
+			}
+		}
+}
+		
+	
+

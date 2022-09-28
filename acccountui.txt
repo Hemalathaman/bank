@@ -1,0 +1,37 @@
+package oops;
+
+public class AccountUi {
+	private  int accountNumber;
+	private String accountHolderName;
+	private int IfscCode;
+	public void setAccountNumber(int  newaccountNumber)
+	{
+		 accountNumber= newaccountNumber;	
+	}
+	public void setaccountHolderName(String newaccountHolderName)
+	{
+		accountHolderName=newaccountHolderName;	
+	}
+	public void  setIfscCode (int  newIfscCode)
+	{
+		IfscCode=newIfscCode;	
+	}
+	public int getaccountNumber()
+	{
+		return accountNumber;
+	}
+	public String getaccountHolderName()
+	{
+		return accountHolderName;
+	}
+	public int getIfscCode()
+	{
+		return IfscCode;
+	}
+	
+	}
+		
+	
+	
+
+

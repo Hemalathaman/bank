@@ -1,0 +1,43 @@
+package oops;
+import java.util.Scanner;
+
+public class AccountMainClass {
+ public static void main(String args[])
+ {
+	 Scanner userinput1=new Scanner(System.in);
+	 Scanner userinput2=new Scanner(System.in);
+	 System.out.println("Enter the Account details of one person:");
+	 
+	 AccountUi account1=new  AccountUi();
+	 System.out.println("Enter the  accountnumber:");
+	 account1.setAccountNumber(userinput1.nextInt());
+	 System.out.println("Enter the  accountholdername:");
+	 account1. setaccountHolderName(userinput2.nextLine());
+	 System.out.println("Enter the Ifsccode:");
+	 account1.setIfscCode(userinput1.nextInt());
+	
+	 System.out.println(account1.getaccountNumber());
+	 System.out.println(account1.getaccountHolderName());
+	 System.out.println(account1.getIfscCode());
+		
+	 System.out.println("Enter the account details of another person:");
+	 AccountUi account2=new  AccountUi();
+	 System.out.println("Enter the  accountnumber2:");
+	 account2.setAccountNumber(userinput1.nextInt());
+	 System.out.println("Enter the  accountholdername2:");
+	 account2. setaccountHolderName(userinput2.nextLine());
+	 System.out.println("Enter the Ifsccode:");
+	 account2.setIfscCode(userinput1.nextInt());
+	 System.out.println(account2.getaccountNumber());
+	 System.out.println(account2.getaccountHolderName());
+	 System.out.println(account2.getIfscCode());
+		
+	
+	 
+	 
+
+	 
+	 
+ }
+	
+}
