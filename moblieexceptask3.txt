@@ -1,0 +1,17 @@
+package exeHandling;
+
+public class MobliePhoneOS {
+	public App[] getAllAppsInfo()
+	{
+		App app[]=new App[5];
+		app[0]=new App("Whatpp",20);
+		app[1]=new App("Facebook",520);
+		app[2]=new App("LinkedIn",400);
+		app[3]=new App("Gmail",120);
+		app[4]=new App("Camera",80);
+		return app;
+		
+		
+	}
+
+}

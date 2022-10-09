@@ -1,0 +1,62 @@
+package exeHandling;
+import java.util.Scanner;
+
+public class MobilePhone {
+	public static   int MAX_MEMORY_SPACE=300;
+	public static void main(String[] args) {
+		MobilePhone ap=new MobilePhone();
+		ap.appRunner(null);
+		
+	}
+	public  void appRunner(App app)
+	{
+		int t=0;
+		Scanner sc=new Scanner(System.in);
+		String appName;
+		try
+		{
+		do
+		{
+		System.out.println("Enter the App name which you want to execute");
+	
+	
+	  
+	    MobliePhoneOS mobliePhoneOs =new MobliePhoneOS();
+	   App[] App= mobliePhoneOs.getAllAppsInfo();
+		for( int i=0 ;i<App.length; i++)
+		{
+			System.out.println(App[i].getAppName());
+		}
+		System.out.println("Exit");
+		appName=sc.nextLine();
+		for( int i=0 ;i<App.length; i++) {
+			if(App[i].equals(appName))
+			{
+				 int m=App[i].getMinimuMemory();
+				 MAX_MEMORY_SPACE= MAX_MEMORY_SPACE-m;
+				 System.out.println(appName+"is allowed and remaining space available is"+ MAX_MEMORY_SPACE);
+			}
+		
+		}
+		 if( MAX_MEMORY_SPACE>0)
+		 {
+			 System.out.println(appName+"is allowed and remaining space available is"+ MAX_MEMORY_SPACE);
+		 }
+		}
+		}
+	}
+		catch(Exception e)
+		{
+		 
+
+	      System.out.println("Insufficient memory exception");
+		 }
+	}while(appName.equals("Exit"));
+}
+}
+		
+	
+	
+
+
+

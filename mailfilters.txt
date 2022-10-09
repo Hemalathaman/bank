@@ -1,0 +1,51 @@
+package allList;
+
+public class EmailFilters {
+	
+	public static void main(String[]args)
+	{
+		String emails[]= {
+			    "hema@gmail.com",
+			    "ganesh@OutLook.com",
+			    "lohi@gmail.com",
+			    "meena@linkedin.com",
+			    "udhaya@OutLook.com",
+			    "hema2@gmail.com"
+	};int gmail=0;
+	int OutLook=0;
+	int Linkedin=0;
+		
+		for(int i=0;i<emails.length;i++)
+		{
+		if(emails[i].endsWith("@gmail.com"))
+		{
+			
+			
+			gmail=gmail+1;
+			
+		}
+		else  if(emails[i].endsWith("@OutLook.com"))
+				{
+			OutLook=OutLook+1;
+						
+				}
+		
+		else if(emails[i].endsWith("@linkedin.com"))
+		{
+			Linkedin=Linkedin+1;
+			
+	
+		}
+		}
+		System.out.println("No of gmail are:"+gmail);
+		System.out.println("No of OutLook are:"+OutLook);
+		System.out.println("No of Linkedin are:"+Linkedin);
+	}
+
+	
+}	
+		
+		
+		
+	
+
